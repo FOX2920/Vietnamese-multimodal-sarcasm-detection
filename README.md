@@ -39,7 +39,7 @@ Our model uses a multimodal fusion approach that combines features from both tex
 - The combined features pass through fully-connected layers for classification
 - Outputs the predicted label using argmax on the logits
 
-![Model Architecture](multimodal.drawio (1).png)
+![Model Architecture](multimodal_model.png)
 
 ## Dataset
 
@@ -100,27 +100,4 @@ Future work will focus on:
 - Enhancing model fusion techniques for better efficiency and generalization
 - Optimizing the training process to reduce time and resource costs
 
-## Dependencies
-To run this project, install the following dependencies:
-```
-pip install torch torchvision transformers datasets scikit-learn matplotlib seaborn pandas
-```
-
-## Training
-Run the training script using:
-```
-python train.py --epochs 20 --batch_size 32 --lr 5e-5
-```
-
-## Evaluation
-Evaluate the trained model on the test set:
-```
-python evaluate.py --model checkpoint.pth
-```
-
-## Contributions
-Feel free to contribute by submitting issues and pull requests.
-
-## License
-This project is licensed under the MIT License.
 
